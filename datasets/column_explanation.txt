@@ -1,0 +1,18 @@
+# desafio_priceav.csv 
+Contém dados de ocupação e preço de anúncios.
+- listing_id: Ad id number.
+- price_string: Overnight stay price.
+- occupied: Ocupation boolean, 1 is available and 0 in occupied.
+- date: Date to be rented.
+- booked_on: Date when the "date" value was booked, "blank" for available.
+
+# desafio_details.csv
+Contém características de cada anúncio.
+- listing_id: Ad id number.
+- location: Listing neighborhood.
+- star_rating: Grade of listing 1-5.
+- is_superhost: Boolean, defines if is a superhost or not, text "True" for superhost, "False" for not.
+- number_of_bedrooms: Number of bedrroms in the listing.
+- number_of_reviews: Number of reviews on the listing.
+- ad_name: Ad title.
+- number_of_bathrooms: Number of bathrooms on the listing.
