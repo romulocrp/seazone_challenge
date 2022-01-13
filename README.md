@@ -1,8 +1,9 @@
 # Seazone Challenge
+![repo cover](img/seazone_logo.png?raw=true)
 ## Introduction
 On 01/11/2022 Seazone realesed their proposed challenge to participants on their recruitment program. The challenge goal is to evaluate candidates skills on data analysis given the following two data sets:
-- desafio_details.csv
-- desafio_pricesav.csv
+- [desafio_details.csv](/datasets/desafio_details.csv)
+- [desafio_pricesav.csv](/datasets/desafio_pricesav.csv)
 
 Also there are some questions required to answer, given by the recruiters:
 - Order suburbs by growing number of listings.
