@@ -12,6 +12,9 @@ Also there are some questions required to answer, given by the recruiters:
 
 All these questions should be answered and delivered as a GitHub repository link and a PDF with the required analysis.
 
+## Datasets
+All datasets provided by recriuters for the challenge, column information is inside the folder.
+
 ## Notebook
 In this file is all analysis made for the challenge, it is a more didatic way to explain all code used to answer all question and provide deep analysis on the matter.
 
