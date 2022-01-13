@@ -17,7 +17,7 @@ All these questions should be answered and delivered as a GitHub repository link
 All datasets provided by recruiters for the challenge, column information is inside the folder.
 
 ## Notebook
-In this file is all analysis made for the challenge, it is a more didatic way to explain all code used to answer all question and provide deep analysis on the matter.
+In this file is all analysis made for the challenge, it is a more didatic way to explain all code used to answer question and provide deep analysis on the matter.
 
 ## Dashboard
 The dashboard directory is a more resumed way to view all answers, lacks text explanation which is provided by other delivereables, but is faster to get access to graphs and numbers delivered by the analysis. All results from the notebook are here.
