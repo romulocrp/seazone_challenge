@@ -1,5 +1,5 @@
 # desafio_priceav.csv 
-Contém dados de ocupação e preço de anúncios.
+Contains occupation and price ad data.
 - listing_id: Ad id number.
 - price_string: Overnight stay price.
 - occupied: Ocupation boolean, 1 is available and 0 in occupied.
@@ -7,7 +7,7 @@ Contém dados de ocupação e preço de anúncios.
 - booked_on: Date when the "date" value was booked, "blank" for available.
 
 # desafio_details.csv
-Contém características de cada anúncio.
+Contains ad characteristics.
 - listing_id: Ad id number.
 - location: Listing neighborhood.
 - star_rating: Grade of listing 1-5.
