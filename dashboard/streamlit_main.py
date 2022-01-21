@@ -23,5 +23,7 @@ elif menu=="Questão 1":
     set_questao_1_page()
 elif menu=="Questão 2":
     set_questao_2_page()
+elif menu=="Questão 3":
+    set_questao_3_page()    
 elif menu == "Questão 4":
     set_questao_4_page()
