@@ -133,7 +133,57 @@ Fonte:
 https://www.creci-sc.gov.br/p/noticias/fipezap-analisa-comportamento-dos-precos-medios-do-aluguel-em-outubro/1402/
 """
 
-q4_explanation_1 = """## Questão 4
+q3_explanation_1 = """## Questão 3
+### *Encontrar correlações entre as características do anúncio e seu faturamento. Citar e explicar.*
+
+A resposta dessa questão é extensa e requer várias manipulações dos dados para ser obtida,
+começando por agrupar os dados conforme as características do anúncio, depois calcular o
+faturamento total para cada um deles. Depois foi feita a codificação dos bairros para que
+fosse possível calcular a correlação da característica com o faturamento.
+
+Depois das manipulações foi calculada a matrix de correlação entre as características e 
+isolada apenas a coluna de faturamento, o resultado pode ser observado abaixo:"""
+
+q3_explanation_2 = """Dado o resultado, é possível perceber uma correlação mais pronunciada
+entre o número de quartos e de banheiros com o aumento de faturamento enquanto o selo de 
+*superhost* com uma correlação negativa em relação ao faturamento total. As características
+serão analisadas mais a fundo.
+
+#### Número de quartos
+Para analisar o número de quartos, foi feito dois gráficos que mostram o faturamento médio
+conforme o número de quartos e um com uma contagem de anúncios conforme o número de quartos."""
+
+q3_explanation_3 = """Esses dados mostram que mesmo com uma oferta maior no número de 
+anúncios com 1 e 2 quartos o grosso do faturamento observado ainda se dá pela locação de
+anúncios com 3 e 4 quartos. A explicação aqui é de que as pessoas que costumam fazer viagens
+com aluguel de temporada não estão sozinhas, seja com amigos ou família, as locações
+ocorrem geralmente para um grupo de pessoas conviver no mesmo ambiente.
+
+#### Número de Banheiros
+A análise do número de banheiros foi da mesma maneira que o número de quartos."""
+
+q3_explanation_4 = """Seguindo a mesma tendência encontrada com o número de quartos, o 
+número de banheiros também possui um maior faturamento para anúncios que possuem maior 
+capacidade de abrigar pessoas, justificando a correlação positiva das duas características
+com o faturamento.
+
+#### *Superhost*
+Para entender como o faturamento se relaciona com o emblema de *superhost* o método `groupby`
+possui algumas dificuldades para agrupar e calcular valores booleanos, então uma função
+foi criada para varrer o agrupamento e disponibilizar os valores de interesse, o resultado
+pode ser observado abaixo."""
+
+q3_explanation_5 = """Dados os valores encontrados é possível analisar algumas características
+do conjunto de dados, o primeiro é que o número de *superhosts* é um pouco maior que a
+metade dos não *superhosts*, enquanto o faturamento dos *superhosts* fica abaixo da metade
+do faturamento total dos outros anuciantes, a diferença mostra que não existe uma tendência
+realmente vantajosa em se tornar superhost, apesar das garantias de estadia dos inquilinos.
+
+Outra observação que vale ser feita é de que mesmo com o selo, não é garantia de que o faturamento
+será realmente maior por uma prerência dos hóspedes por contas verificadas e com maiores
+garantias de uma boa estadia."""
+
+q4_explanation = """## Questão 4
 ### *Medir a antecedência média de reservas. Checar se existe diferença para finais de semana.*
 
 Para esta pergunta, foram selecionados os anúncios que possuíam data de agendamento e foram filtradas as datas de locação
@@ -141,5 +191,24 @@ selecionando as datas que tem o menor valor por agendamento, depois foram filtra
 antecedência para calcular a média e por último, utilizando as datas de locação, foi criada uma coluna com os dias da semana
 de forma numérica, sendo 0 segunda-feira e 6 domingo.
 
-O resultado das médias pode ser vizualizado abaixo:
+O resultado das médias pode ser vizualizado abaixo, devido a proximidade dos valores, não
+é possível extrair muitas informações, além de que a média de antecedência é de 30 dias, 
+para ver mais informações da amostra de dados foi realizada o boxplot para análise
+dos valores encontrados.
+
+Os valores de data foram convertidos para números em nanosegundos e a escala do gráfico
+convertida para uma escala logarítmica devido a ordem de magnitude dos valores. É possível
+perceber que os valores para finais de semana possuem uma quantidade menor de valores
+atípicos do que locações no geral. Justificando também o aumento de valores
+dentro da amplitude interquantil observada.
+
+Outros valores que contribuem para a análise são a moda e a mediana, a partir da moda
+é possível perceber que normalmente as pessoas fazem seus agendamentos com um dia
+de antecedência, e não trinta dias como previsto em média, isso mostra como os valores
+que possuem muita antecedência estão acima do normal e também como as reservas são feitas
+em cima da hora.
+
+Já a mediana mostra que pelo menos 50 porcento dos valores encontrados foram feitos com
+menos de uma semana de antecedência, o valor corrobora a tese de que das reservas 
+antecedentes a data de locação foram realizadas com um planejamento de curto prazo.
 """
