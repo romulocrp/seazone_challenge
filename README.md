@@ -21,3 +21,9 @@ In this file is all analysis made for the challenge, it is a more didatic way to
 
 ## Dashboard
 The dashboard directory is a more resumed way to view all answers, lacks text explanation which is provided by other delivereables, but is faster to get access to graphs and numbers delivered by the analysis. All results from the notebook are here.
+
+In order to use the dashboard download the latest version of Streamlit on the python environment is required by the following line:
+`pip install streamlit`
+
+To launch the app just using the command line:
+`streamlit run path/to/file/streamlit_main.py`
