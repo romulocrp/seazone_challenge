@@ -1,8 +1,8 @@
 # Todas as variáveis nesse arquivo são variáveis de texto utilizadas no dashboard
 
-details_path = "/home/romulo/Documentos/projetos_ds/desafio_seazone/desafio_details.csv"
+details_path = "../datasets/desafio_details.csv"
 
-price_path = "/home/romulo/Documentos/projetos_ds/desafio_seazone/desafio_priceav.csv"
+price_path = "../datasets/desafio_priceav.csv"
 
 title = "Desafio Seazone análise de dados"
 
