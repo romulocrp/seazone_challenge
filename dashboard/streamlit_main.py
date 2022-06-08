@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from streamlit_functions import *
 
 st.set_page_config(page_title=title,
-                page_icon="/home/romulo/Documentos/projetos_ds/desafio_seazone/analise_streamlit/img/seazone_logo.png",
+                page_icon="img/seazone_logo.png",
                 layout="centered")
 st.sidebar.image("/home/romulo/Documentos/projetos_ds/desafio_seazone/analise_streamlit/img/seazone_logo.png",
                   width=200)
